@@ -1,0 +1,405 @@
+.desktop-3 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 89px 30px 108.2px;
+  gap: 73.1px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.desktop-3,
+.left-panel,
+.vector {
+  display: flex;
+  box-sizing: border-box;
+}
+.left-panel {
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 120.9px var(--padding-0);
+  gap: 67px;
+  min-width: 310px;
+  max-width: 604px;
+  text-align: left;
+  font-size: 34.2px;
+  color: var(--color-black);
+  font-family: var(--font-metrophobic);
+}
+.vector {
+  width: 100%;
+  align-items: flex-start;
+  padding: var(--padding-0) 31px var(--padding-0) var(--padding-0);
+  max-width: 175.9px;
+}
+.vector-icon {
+  height: 182px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: contain;
+}
+.welcome-to-berrybox-container {
+  width: 556px;
+  position: relative;
+  display: inline-block;
+  max-width: 556px;
+}
+.welcome-to-berrybox {
+  font-size: 52.3px;
+}
+.sign-in {
+  font-size: 37.6px;
+}
+.right-panel-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 33.2px;
+  min-width: 310px;
+  max-width: 577px;
+  text-align: left;
+  font-size: var(--fs-17_8);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.berrybox {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: var(--padding-0) 15px var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+  max-width: 518.9px;
+  font-size: 68px;
+  font-family: var(--font-meddon);
+}
+.berrybox2 {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 503px;
+}
+.email-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55.8px var(--padding-2) var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+  isolation: isolate;
+  max-width: 100%;
+  z-index: 0;
+}
+.email,
+.frame {
+  position: relative;
+}
+.email {
+  width: 484.4px;
+  font-weight: 300;
+  display: inline-block;
+  max-width: 484.4px;
+  z-index: 1;
+}
+.frame {
+  align-self: stretch;
+  height: 59.4px;
+  border-radius: 475.3px;
+  background-color: var(--color-white);
+  border: 1.2px solid var(--color-black);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-20);
+  max-width: 100%;
+  z-index: 2;
+  margin-top: -3.6px;
+}
+.enter-email::-webkit-input-placeholder { line-height: normal; }
+.enter-email {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-weight: 300;
+  font-family: var(--font-poppins);
+  font-size: var(--fs-17_8);
+  background-color: transparent;
+  flex: 1;
+  position: relative;
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  opacity: 0.5;
+  min-width: 250px;
+  max-width: 457.6px;
+  padding: var(--padding-01);
+}
+.password-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-0) var(--padding-0) 27.1px 1px;
+  box-sizing: border-box;
+  isolation: isolate;
+  max-width: 100%;
+  z-index: 0;
+}
+.password {
+  width: 490.1px;
+  position: relative;
+  font-weight: 300;
+  display: inline-block;
+  max-width: 490.1px;
+  z-index: 1;
+}
+.frame2 {
+  align-self: stretch;
+  height: 59.4px;
+  border-radius: 475.3px;
+  background-color: var(--color-white);
+  border: 1.2px solid var(--color-black);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-20);
+  max-width: 100%;
+  z-index: 2;
+  margin-top: -1.3px;
+  position: relative;
+}
+.password2 {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-weight: 300;
+  font-family: var(--font-poppins);
+  font-size: var(--fs-17_8);
+  background-color: transparent;
+  flex: 1;
+  position: relative;
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  opacity: 0.5;
+  min-width: 250px;
+  max-width: 458.2px;
+  padding: var(--padding-01);
+}
+.checkbox-row {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6px var(--padding-0);
+  box-sizing: border-box;
+  gap: 26px;
+  max-width: 100%;
+}
+.famiconscheckbox {
+  margin: 0;
+  height: 22px;
+  width: 22px;
+  position: relative;
+}
+.i-agree-to {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  width: 433.2px;
+  flex-shrink: 0;
+  opacity: var(--opacity-0_6);
+  max-width: 433.2px;
+}
+.right-panel-form-inner,
+.sign-in-wrapper {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.right-panel-form-inner {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-0) var(--padding-0) var(--padding-0) var(--padding-2);
+  background-color: transparent;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.sign-in-wrapper {
+  flex: 1;
+  border-radius: 17.8px;
+  background: linear-gradient(
+    90deg,
+    rgba(252, 42, 42, 0.24),
+    rgba(37, 9, 247, 0.24) 94.23%
+  );
+  align-items: center;
+  justify-content: center;
+  padding: 16px 38px;
+}
+.sign-in2 {
+  flex: 1;
+  position: relative;
+  font-size: var(--fs-17_8);
+  font-weight: 300;
+  font-family: var(--font-poppins);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  max-width: 100%;
+}
+.divider-row,
+.divider-row-inner {
+  display: flex;
+  align-items: flex-start;
+}
+.divider-row {
+  align-self: stretch;
+  justify-content: center;
+  padding: 5.6px var(--padding-0) 2.8px 3px;
+  gap: 4.8px;
+}
+.divider-row-inner {
+  flex: 1;
+  padding: 7.6px var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+  min-width: 90px;
+  max-width: 137.8px;
+}
+.frame-child {
+  height: 1.2px;
+  flex: 1;
+  position: relative;
+  border-top: 1.2px solid var(--color-black);
+  box-sizing: border-box;
+  opacity: var(--opacity-0_6);
+}
+.sign-in-with {
+  height: 27px;
+  display: flex;
+  align-items: flex-start;
+  padding: var(--padding-0) 11px var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+}
+.sign-in-with2 {
+  position: relative;
+  opacity: var(--opacity-0_6);
+}
+.logosfacebook-parent {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-0) var(--padding-0) 12px;
+  gap: 45.1px;
+}
+.logosfacebook-icon {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-01);
+  background-color: transparent;
+  height: 35.6px;
+  width: 35.6px;
+  position: relative;
+}
+.dont-have-an-container {
+  width: 299.2px;
+  position: relative;
+  display: inline-block;
+  opacity: var(--opacity-0_6);
+  max-width: 299.2px;
+}
+.sign-up {
+  font-weight: 500;
+}
+@media screen and (max-width: 750px) {
+  .left-panel {
+    padding-top: 79px;
+    padding-bottom: 79px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .welcome-to-berrybox-container {
+    font-size: 27px;
+  }
+  .right-panel-form {
+    max-width: 100%;
+  }
+  .berrybox2 {
+    font-size: 54px;
+  }
+}
+@media screen and (max-width: 675px) {
+  .desktop-3 {
+    gap: 37px;
+  }
+  .left-panel {
+    gap: 33px;
+  }
+  .left-panel,
+  .welcome-to-berrybox-container {
+    max-width: 100%;
+  }
+  .right-panel-form {
+    gap: 17px;
+    max-width: 100%;
+  }
+  .berrybox,
+  .berrybox2,
+  .email,
+  .password {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .desktop-3 {
+    gap: 18px;
+  }
+  .left-panel {
+    gap: 17px;
+  }
+  .welcome-to-berrybox-container {
+    font-size: 20px;
+  }
+  .berrybox2 {
+    font-size: 41px;
+  }
+  .enter-email,
+  .i-agree-to,
+  .password2 {
+    max-width: 100%;
+  }
+  .divider-row {
+    flex-wrap: wrap;
+  }
+  .logosfacebook-parent {
+    gap: 23px;
+    flex-wrap: wrap;
+  }
+}
+
+/* Sign-in has one less field, so use the same compact spacing as sign-up. */
+.right-panel-form { gap: 21px; }
+.email-parent { padding-top: 3.6px; }
+.password-parent { padding-bottom: 0; }
+
+/* A slightly smaller canvas for sign-in, while keeping browser zoom responsive. */
+@media screen and (min-width: 751px) {
+  .desktop-3 {
+    zoom: 1;
+    width: 100%;
+    transform: scale(0.84);
+    transform-origin: top center;
+  }
+}
+
+html, body { overflow-x: hidden; }

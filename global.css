@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* Common Style Variables */
+
+  /* Color */
+  --color-black: #000;
+  --color-darkred: #a60000;
+  --color-forestgreen: #25923e;
+  --color-gainsboro: #d9d9d9;
+  --color-gold: #ffe551;
+  --color-gray: rgba(0, 0, 0, 0.56);
+  --color-midnightblue: #2a2f92;
+  --color-white: #fff;
+
+  /* Font */
+  --font-meddon: Meddon, Arial, sans-serif;
+  --font-metrophobic: Metrophobic, Arial, sans-serif;
+
+  /* WidthHeights */
+  --height-415: 415px;
+  --width-335: 335px;
+
+  --left-20: 20px;
+  --top-0: 0px;
+}

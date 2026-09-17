@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* Common Style Variables */
+
+  /* Color */
+  --color-black: #000;
+  --color-white: #fff;
+
+  /* Padding */
+  --padding-0: 0px;
+  --padding-01: 0;
+  --padding-2: 2px;
+  --padding-3: 3px;
+  --padding-6: 6px;
+  --padding-15: 15px;
+  --padding-20: 20px;
+  --padding-30: 30px;
+
+  /* Font */
+  --font-meddon: Meddon, Arial, sans-serif;
+  --font-metrophobic: Metrophobic, Arial, sans-serif;
+  --font-poppins: Poppins, Arial, sans-serif;
+
+  /* FontSize */
+  --fs-17_8: 17.8px;
+
+  /* Opacities */
+  --opacity-0_6: 0.6;
+}
