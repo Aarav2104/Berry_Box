@@ -212,23 +212,26 @@
               <img
                 class="page-controls-icon"
                 loading="lazy"
-                alt=""
+                alt="Previous page"
                 src="./public/Page-Controls.svg"
               />
 
-              <button class="page-controls" type="submit">
-                <div class="control-items">1</div>
-              </button>
-              <button class="page-controls2" type="submit">
-                <div class="control-items">2</div>
-              </button>
-              <button class="page-controls3" type="submit">
-                <div class="control-items">3</div>
-              </button>
+              <div class="page-controls-scroll fit" id="page-numbers">
+                <button class="page-num active" type="button">
+                  <div class="control-items">1</div>
+                </button>
+                <button class="page-num" type="button">
+                  <div class="control-items">2</div>
+                </button>
+                <button class="page-num" type="button">
+                  <div class="control-items">3</div>
+                </button>
+              </div>
+
               <img
                 class="page-controls-icon"
                 loading="lazy"
-                alt=""
+                alt="Next page"
                 src="./public/Page-Controls-right.svg"
               />
             </div>
@@ -260,15 +263,12 @@
               <div class="storage-content">
                 <div class="storage-overview">Storage Overview</div>
                 <div class="storage-usage-row">
-                  <div class="gb-10">2.45 GB / 10 GB used</div>
-                  <div class="control-items">24%</div>
+                  <div class="gb-10">0.00 GB / 10 GB used</div>
+                  <div class="control-items">0%</div>
                 </div>
-                <img
-                  class="merged-asset-2-icon"
-                  loading="lazy"
-                  alt=""
-                  src="./public/merged-asset-2@2x.png"
-                />
+                <div class="merged-asset-2-icon storage-bar-track">
+                  <span class="storage-bar-fill" id="storage-bar-fill"></span>
+                </div>
               </div>
             </div>
             <div class="info-panel">

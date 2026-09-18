@@ -445,6 +445,9 @@
   font-family: var(--font-poppins);
   color: var(--color-black);
   text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .photo-card-3 {
   flex: 1;
@@ -876,4 +879,209 @@
   .filter-controls {
     max-width: 100%;
   }
+}
+
+/* --- Added: per-photo action icons (star / download / delete), delete-confirm modal, Profile page panel --- */
+.photo-thumb {
+  position: relative;
+}
+.photo-action {
+  position: absolute;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.photo-action:hover {
+  background-color: var(--color-white);
+}
+.photo-action img {
+  width: 14px;
+  height: 14px;
+}
+.photo-star {
+  top: 8px;
+  right: 8px;
+  font-size: 15px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.4);
+}
+.photo-star.on {
+  color: #e9a900;
+}
+.photo-download {
+  top: 8px;
+  left: 8px;
+}
+.photo-delete {
+  top: 44px;
+  left: 8px;
+}
+.bb-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(20, 15, 30, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 50;
+}
+.bb-modal-card {
+  background-color: var(--color-white);
+  border-radius: var(--br-20);
+  box-shadow: var(--shadow-drop);
+  padding: 28px;
+  max-width: 380px;
+  width: 100%;
+  font-family: var(--font-poppins);
+  box-sizing: border-box;
+}
+.bb-modal-card h2 {
+  margin: 0 0 10px;
+  font-size: var(--fs-17_8);
+  font-weight: 500;
+  color: var(--color-black);
+}
+.bb-modal-card p {
+  margin: 0 0 22px;
+  font-size: var(--fs-15);
+  color: rgba(0, 0, 0, 0.6);
+}
+.bb-modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+.bb-modal-actions button {
+  cursor: pointer;
+  border: 0;
+  border-radius: var(--br-10);
+  padding: 10px 18px;
+  font-family: var(--font-poppins);
+  font-size: var(--fs-15);
+  background-color: var(--color-gainsboro);
+  color: var(--color-black);
+}
+.bb-modal-actions button.bb-danger {
+  background-color: #f3d3d3;
+  color: #a60000;
+}
+.profile-panel {
+  flex: 1;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-drop);
+  border-radius: var(--br-20);
+  padding: 34px;
+  min-width: 300px;
+  max-width: 926px;
+  box-sizing: border-box;
+}
+.profile-avatar-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.profile-name {
+  margin: 0;
+  font-family: var(--font-poppins);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-black);
+  max-width: 480px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.profile-email {
+  font-family: var(--font-poppins);
+  font-size: var(--fs-15);
+  color: rgba(0, 0, 0, 0.56);
+  max-width: 480px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.profile-info-rows {
+  max-width: 420px;
+}
+
+/* Scrollable page-number list: keeps the same compact footprint, but supports any page count. */
+.page-controls-parent {
+  flex-wrap: nowrap; /* override the original wrap: only the number strip scrolls, arrows never drop to a new line */
+}
+.page-controls-icon {
+  flex: 0 0 auto; /* arrows keep a fixed size and position, left/right */
+}
+.page-controls-scroll {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  padding: 2px;
+}
+.page-controls-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+.page-controls-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--color-thistle-200);
+  border-radius: 4px;
+}
+.page-num {
+  flex: 0 0 auto;
+  cursor: pointer;
+  border: 0;
+  background-color: var(--color-white);
+  border-radius: var(--br-10);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 16px;
+  min-width: 40px;
+  height: 55px;
+}
+.page-controls-scroll.fit {
+  overflow-x: visible;
+}
+.page-controls-scroll.fit .page-num {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.page-num:hover {
+  background-color: var(--color-gainsboro);
+}
+.page-num.active {
+  background-color: var(--color-thistle-200);
+}
+
+/* Live storage usage bar, replacing the old static bar image. */
+.storage-bar-track {
+  background-color: var(--color-gainsboro);
+  border-radius: 20px;
+}
+.storage-bar-fill {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--color-blueviolet), var(--color-thistle-100));
+  border-radius: inherit;
+  transition: width 0.3s ease;
 }
