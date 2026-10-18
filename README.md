@@ -18,3 +18,5 @@ BerryBox is a vanilla JavaScript photo-gallery frontend. Open `index.html` throu
 | GET / PATCH | `/profile` | profile and storage data |
 
 Use Cognito Hosted UI or your preferred Cognito JavaScript client in `AwsService` in `app.js`; provider-specific code is kept there.
+
+https://aarav2104.github.io/Berry_Box/
